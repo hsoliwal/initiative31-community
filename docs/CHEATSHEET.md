@@ -86,3 +86,37 @@ Editing `profile/README.md` in this fork changes this repository only. The speci
 | “An older slide settles the final decision.” | Check the final report and the date/scope of the earlier material |
 
 No external contact was made or historical prototype executed to create this guide.
+
+## Keep a citation reproducible
+
+A branch URL follows future edits. When sharing a historical statement, capture
+the commit as well as the document heading. In an existing clone:
+
+Use a clone of `hsoliwal/initiative31-community` and a commit already
+available on that GitHub remote. A local unpublished commit or a commit from
+another repository can produce a URL that does not exist. Uncommitted edits are
+not captured. Open the printed URL and verify its contents before sharing it.
+
+```sh
+revision=$(git rev-parse HEAD)
+printf 'https://github.com/hsoliwal/initiative31-community/blob/%s/profile/README.md\n' "$revision"
+git show "$revision":profile/README.md
+```
+
+The printed URL identifies the profile you actually inspected; append a heading
+fragment only after checking that heading in the same revision. This command
+does not verify that a historical contact channel is still available.
+
+## Maintain the guide without rewriting the record
+
+1. Compare a proposed wording change with the [original profile](../profile/README.md)
+   and [brainstorming disclaimer](../profile/Brainstorming.md#disclaimer).
+2. Put new navigation or interpretation in this fork's guides. If a historical
+   statement needs correction, explain the evidence and date instead of silently
+   turning an earlier wish into a later result.
+3. Check both directions of navigation: the root index should reach the guide,
+   and the guide should still point to the original evidence.
+4. Treat a changed upstream URL and a changed research conclusion separately.
+   A redirect can repair navigation without establishing new technical evidence.
+5. Preview the changed Markdown and record which links were opened. A clean
+   whitespace check does not establish that a fragment or remote URL works.

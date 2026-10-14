@@ -52,6 +52,18 @@ A shallow checkout contains limited history. Fetch more history only when your i
 6. Remove credentials, private links, personal local paths, and non-public project material.
 7. Check the latest public contact instructions. Do not post the same request to every historical channel.
 
+## Review a community change without building
+
+There is no application or test runner in this repository. For a Markdown-only change:
+
+1. Open the edited page on GitHub and follow its local links, including section jumps.
+2. Check `profile/README.md` and `profile/Brainstorming.md` for the original wording before paraphrasing a project conclusion or wish.
+3. For a code-related claim, follow the [next-step map](START_HERE.md#choose-a-next-step-not-just-a-repository) and check the implementation's own revision and limitations.
+4. Inspect the diff and changed paths using the commands above. Preserve the [license](../LICENSE) and original credits.
+5. In the PR, separate link/content review from anything actually reproduced. A successful Markdown review says nothing about a native build or widget compatibility.
+
+Editing `profile/README.md` in this fork changes this repository only. The special upstream organization profile remains in [`swt-initiative31/.github`](https://github.com/swt-initiative31/.github). Confirm the PR's base repository before submitting a correction.
+
 ## Before proposing a documentation change
 
 - [ ] The intended destination is clear: this fork's guide or original upstream material.

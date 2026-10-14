@@ -11,6 +11,8 @@ This public fork preserves the community profile from [swt-initiative31/.github]
 | Understand the initiative in five minutes | [Original project profile](profile/README.md) |
 | Find the goals, results, and next implementation steps | [Final project report](https://github.com/swt-initiative31/documents/blob/main/report/overall_report.md) |
 | Learn the vocabulary and repository roles | [Community field guide](docs/START_HERE.md) |
+| Choose the right project or contribution destination | [Next-step map](docs/START_HERE.md#choose-a-next-step-not-just-a-repository) |
+| Distinguish wishes, results, and future work | [Evidence guide](docs/START_HERE.md#what-evidence-supports-a-community-answer) |
 | Find a quick reading or contribution workflow | [Community cheat sheet](docs/CHEATSHEET.md) |
 | Ask a useful technical question | [Worked examples](docs/EXAMPLES.md) |
 | See historical participant wishes | [Brainstorming notes](profile/Brainstorming.md), including their disclaimer |

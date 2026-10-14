@@ -2,6 +2,8 @@
 
 [Home](../README.md) · [Cheat sheet](CHEATSHEET.md) · [Examples](EXAMPLES.md)
 
+[Complete collection map and contribution boundaries](CONTENT_MAP.md)
+
 ## The idea
 
 Eclipse SWT presents a Java widget API while its existing implementations rely on OS-specific components. Initiative 31 investigated whether a new implementation could preserve compatibility while sharing more work across platforms and enabling more control over widgets and rendering.

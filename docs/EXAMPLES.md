@@ -53,3 +53,39 @@ Next verification needed:
 ```
 
 This format keeps research useful without inventing commitments. Keep any non-public work context out of public issues, pull requests, and documentation.
+
+## Example 5: rewrite an overconfident community summary
+
+Consider this hypothetical sentence: “Initiative 31 guarantees a fast SWT replacement with browser integration.”
+
+The [brainstorming record](../profile/Brainstorming.md) lists browser integration and performance among wishes and explicitly says those wishes are not required features. The [profile](../profile/README.md) provides the project's context; the [final report](https://github.com/swt-initiative31/documents/blob/main/report/overall_report.md) is the place to investigate outcomes.
+
+A defensible replacement is: “Participants identified browser integration and performance as desirable evaluation topics. To assess what was demonstrated, consult the final report and the relevant prototype's recorded results.”
+
+Why this is stronger:
+- It identifies who expressed the wishes without inventing a contractual promise.
+- It keeps evaluation preferences separate from implementation results.
+- It gives the next evidence source rather than asserting universal speed or compatibility.
+
+For your own summary, mark each sentence as **community context**, **wish**, **reported result**, or **proposal**. If a sentence combines categories, split it and attach the right source to each. A report's conclusion should remain attributed to that report.
+
+## Maintaining the community guide
+
+| Change being proposed | Check first | Preserve |
+| --- | --- | --- |
+| Contact or chat link replacement | Current public upstream guidance and the actual destination | Historical context; do not promise a response |
+| Project status update | Explicit public announcement and its date | The distinction between completed research and later work |
+| New prototype link | Correct repository, branch, README, and implementation role | Clear separation of community and source repositories |
+| Brainstorming clarification | The disclaimer and surrounding text | Wishes must remain wishes |
+| Fork guide improvement | Whether [START_HERE](START_HERE.md) and [CHEATSHEET](CHEATSHEET.md) need matching navigation | Original profile, participant credits, and licensing |
+
+A link that redirects is not automatically broken; verify its destination before replacing it. A channel that is historical should not be labelled active merely because its URL still opens. Editing this fork's profile does not change the upstream organization's public profile.
+
+### FAQ: who should receive a question?
+
+- **Confusing fork navigation:** propose a focused change here.
+- **Prototype setup or behavior:** use the specific implementation repository's current contribution guidance and include its revision.
+- **Original project conclusions:** start from the public report and verify the upstream project's current contact guidance.
+- **Private implementation context:** remove it from the public question; provide only a minimal public reproduction or source-reading question.
+
+These examples do not contact anyone or verify that historical channels are currently staffed.

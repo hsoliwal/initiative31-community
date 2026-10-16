@@ -2,6 +2,8 @@
 
 [Home](../README.md) · [Cheat sheet](CHEATSHEET.md) · [Examples](EXAMPLES.md)
 
+[Complete collection map and contribution boundaries](CONTENT_MAP.md)
+
 ## The idea
 
 Eclipse SWT presents a Java widget API while its existing implementations rely on OS-specific components. Initiative 31 investigated whether a new implementation could preserve compatibility while sharing more work across platforms and enabling more control over widgets and rendering.
@@ -55,6 +57,31 @@ The [preserved profile](../profile/README.md) describes an evaluation project, i
 | Prototype repositories linked by the reports | Code-specific setup, branches, experiments, and limitations |
 
 The fork's name `initiative31-community` does not make it the upstream organization's special `.github` repository. Editing its profile file here does not update the upstream organization profile.
+
+## Choose a next step, not just a repository
+
+| Your next step | Where to start | What to bring |
+| --- | --- | --- |
+| Understand the project's final outcome | [Final report: Results](https://github.com/swt-initiative31/documents/blob/main/report/overall_report.md#results) | The particular technology or claim you are checking |
+| Explore the custom-widget demonstrator | [`prototype-skija` README](https://github.com/swt-initiative31/prototype-skija/blob/master/README.md) | Its own setup, platform caveats, and State section; record the revision |
+| Investigate rendering separately from widgets | [Report: Skia-based GC in SWT](https://github.com/swt-initiative31/documents/blob/main/report/overall_report.md#skia-based-gc-in-swt), then [`skija-canvas`](https://github.com/swt-initiative31/skija-canvas) | A drawing/GC question rather than a claim about all widget behavior |
+| Investigate the earlier VCL/UNO route | [Skia/VCL assessment](https://github.com/swt-initiative31/documents/blob/main/results/skia_vcl.md) | Whether your question concerns direct VCL access or UNO controls |
+| Propose work beyond the demonstrator | [Report: Content / Steps](https://github.com/swt-initiative31/documents/blob/main/report/overall_report.md#content--steps) | The specific gap: event handling, one canvas, full GC, performance, or widget finalization |
+| Correct this fork's navigation | This repository's `README.md` or `docs/` | The broken link or unclear sentence and its public replacement |
+| Correct the original community profile | [Upstream `.github` repository](https://github.com/swt-initiative31/.github) | Current upstream instructions and a source-backed correction |
+
+A community/profile edit does not implement a widget or change a prototype's supported platforms. Likewise, an implementation repository's inherited SWT introduction may describe upstream SWT rather than certify the experimental branch. Read the repository's prototype-specific notes before reusing its setup or compatibility claims.
+
+## What evidence supports a community answer?
+
+Use the narrowest statement the source supports:
+
+1. **Wish:** the [brainstorming list](../profile/Brainstorming.md#disclaimer) records participant priorities; it is not an agreed requirements list.
+2. **Reported result:** an assessment or report records what the authors achieved in that experiment. Include the technology and limitation.
+3. **Reproduced result:** your own test needs an exact commit, environment, steps, and observed behavior. Merely reading the report does not provide this evidence.
+4. **Future work:** the realization plan proposes further implementation. It does not establish funding, staffing, a release date, or maintainer availability.
+
+For example, the profile's statement that the demonstrator renders widgets with Skia should be read alongside the report's [implementation steps](https://github.com/swt-initiative31/documents/blob/main/report/overall_report.md#content--steps): native backing widgets and OS-driven event handling still required further work. Rendering coverage alone does not establish complete SWT behavior or platform parity.
 
 ## Scope and provenance
 
